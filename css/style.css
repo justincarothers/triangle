@@ -1,20 +1,4 @@
-img {
-  height: 300px;
-  width: 100%;
-}
-body {
-  text-align: center;
-}
 
-.turtlePage {
-  display: none;
+.form-group {
+  max-width: 500px;
 }
-.snakePage {
-  display: none;
-}
-.insectPage {
-  display: none;
-}
-/*#main {
-  display: none;
-}*/

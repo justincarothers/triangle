@@ -1,33 +1,43 @@
+//
+// var triangleTracker = function (side1, side2, side3) {
+//   var sideOne = parseInt(side1).val();
+//   var sideTwo = parseInt(side2).val();
+//   var sideThree = parseInt(side3).val();
+//
+//   var triangleCheck = (sideOne, sideTwo, sideThree)
+//
+//
+// };
+
+// if ((sideOne + sideTwo) <= sideThree) {
+//   alert ("That is not a triangle")
+// }
+
+
+
+
+
 $(document).ready(function() {
+  $("form#triangle-sides").submit(function(event) {
+    event.preventDefault();
 
-  $(".col-sm-4").click(function(){
+    var side1 = $('input#side1').val();
+    var side2 = $('input#side2').val();
+    var side3 = $('input#side3').val();
+    var triangle = triangleTracker(side1, side2, side3);
 
-   var choice = $(this).attr('id'); // or var clickedBtnID = this.id
-   if (choice === 'turtle') {
-     $("#main").hide();
-     $(".turtlePage").show();
-   }
-   else if (choice === 'snake') {
-     $("#main").hide();
-     $(".snakePage").show();
-   }
-   else if (choice === 'insect')
-   {
-     $("#main").hide();
-     $(".insectPage").show();
-   }
-   else {
-     return;
-   }
- });
+    }
+
+  });
 });
-
-
-
-
-
-
-
+//
+// if (sideOne === sideTwo && sideTwo === sideThree) {
+//   alert("EQUILLATERAL TRIANGLE");
+// } else if ((sideOne !=== sideTwo ) && (sideOne !=== sideThree)) {
+//   alert("SCALENE TRIANGLE");
+// } else if ((sideOne + sideTwo) <= sideThree) {
+//
+// }
 
 
 
