@@ -1,7 +1,20 @@
-#eighteen {
-  display: none;
+img {
+  height: 300px;
+  width: 100%;
+}
+body {
+  text-align: center;
 }
 
-#notEighteen {
+.turtlePage {
   display: none;
 }
+.snakePage {
+  display: none;
+}
+.insectPage {
+  display: none;
+}
+/*#main {
+  display: none;
+}*/
